@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DataBaseManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [[DataBaseManager sharedInstance] openDataBase];
+    
+    [[DataBaseManager sharedInstance] createTable];
+    
+//    [[DataBaseManager sharedInstance] insertStudent];
+    [[DataBaseManager sharedInstance] queryAllStudent];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

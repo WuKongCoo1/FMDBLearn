@@ -69,6 +69,12 @@ static FMDatabase *dataBase = nil;
 //        [dataBase executeStatements:@"CREATE TABLE t_student (name text, primaryKey integer NOT NULL PRIMARY KEY AUTOINCREMENT);" ];
     }
     
+    if (![dataBase tableExists:@"t_class"]) {
+        [dataBase executeStatements:@"create table t_class (name text, id integer NOT NULL PRIMARY KEY AUTOINCREMENT);"];
+    }
+    
+    [dataBase executeStatements:@"CREATE TABLE t_teacher (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT, classID INTEGER,                                      CONSTRAINT outSideClassID FOREIGN KEY (classID) REFERENCES t_class (id) ON DELETE SET NULL ON UPDATE NO ACTION);"];
+    
     
 }
 
@@ -91,13 +97,44 @@ static FMDatabase *dataBase = nil;
 {
     FMResultSet *resultSet = [dataBase executeQuery:@"select * from t_student"];
     
+    NSMutableArray *tArray = [NSMutableArray array];
+    
     while ([resultSet next]) {
-//        NSString *name = [resultSet stringForColumn:@"name"];
-        
-        NSLog(@"%@", [resultSet resultDictionary]);
+        [resultSet kvcMagic:nil];
+        [tArray addObject:[resultSet resultDictionary]];
     }
     
-    return nil;
+    return tArray;
 }
 
+
+- (NSDictionary *)searchStudentWithID:(NSNumber *)studentID
+{
+    FMResultSet *resultSet = [dataBase executeQuery:@"select * from t_student where primaryKey = ?", studentID];
+    while ([resultSet next]) {
+        NSLog(@"%@", [resultSet resultDictionary]);
+        return [resultSet resultDictionary];
+    }
+    return nil;
+    
+    
+}
+
+- (BOOL)insertStudentWithStudentName:(NSString *)name
+{
+    BOOL isSuccess = [dataBase executeUpdate:@"insert into t_student (name) values (?)", name];
+    if (isSuccess) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"studentDidChange" object:nil];
+    }
+    return isSuccess;
+}
+
+- (BOOL)deleteStudentWithID:(NSString *)studentID
+{
+    BOOL isSuccess = [dataBase executeUpdate:@"delete from t_student where primaryKey = ?", studentID];
+    if (isSuccess) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"studentDidChange" object:nil];
+    }
+    return isSuccess;
+}
 @end

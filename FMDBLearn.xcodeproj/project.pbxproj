@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AC8E5FA044CA73DBE8FE671 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E48FB60BABAE8847FDCBE7A1 /* libPods.a */; };
+		0E73BE2C0B2F1E121006DFA0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CACDC372DA5F7C5A4BE375 /* Pods.framework */; };
 		675629171CD98FEC009DF2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 675629161CD98FEC009DF2CC /* main.m */; };
 		6756291A1CD98FEC009DF2CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 675629191CD98FEC009DF2CC /* AppDelegate.m */; };
-		6756291D1CD98FEC009DF2CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6756291C1CD98FEC009DF2CC /* ViewController.m */; };
+		6756291D1CD98FEC009DF2CC /* StudentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6756291C1CD98FEC009DF2CC /* StudentListViewController.m */; };
 		675629201CD98FEC009DF2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6756291E1CD98FEC009DF2CC /* Main.storyboard */; };
 		675629221CD98FEC009DF2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675629211CD98FEC009DF2CC /* Assets.xcassets */; };
 		675629251CD98FEC009DF2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675629231CD98FEC009DF2CC /* LaunchScreen.storyboard */; };
 		675629301CD98FEC009DF2CC /* FMDBLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6756292F1CD98FEC009DF2CC /* FMDBLearnTests.m */; };
 		6756293B1CD98FEC009DF2CC /* FMDBLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6756293A1CD98FEC009DF2CC /* FMDBLearnUITests.m */; };
 		6756294A1CD99118009DF2CC /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 675629491CD99118009DF2CC /* DataBaseManager.m */; };
+		675F17E71CDAE10200A3EB3D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17E61CDAE10200A3EB3D /* Student.m */; };
+		675F17EA1CDAF10500A3EB3D /* StudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17E91CDAF10500A3EB3D /* StudentDetailViewController.m */; };
+		675F17ED1CDAF60C00A3EB3D /* AddStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17EC1CDAF60C00A3EB3D /* AddStudentViewController.m */; };
+		675F17F01CDB379800A3EB3D /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17EF1CDB379800A3EB3D /* IndexViewController.m */; };
+		675F17F31CDB4CD000A3EB3D /* CLassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +43,13 @@
 
 /* Begin PBXFileReference section */
 		17E26A450C4BCED67B71BB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		21CACDC372DA5F7C5A4BE375 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675629121CD98FEB009DF2CC /* FMDBLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675629161CD98FEC009DF2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		675629181CD98FEC009DF2CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		675629191CD98FEC009DF2CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6756291B1CD98FEC009DF2CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6756291C1CD98FEC009DF2CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6756291B1CD98FEC009DF2CC /* StudentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentListViewController.h; sourceTree = "<group>"; };
+		6756291C1CD98FEC009DF2CC /* StudentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StudentListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6756291F1CD98FEC009DF2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		675629211CD98FEC009DF2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675629241CD98FEC009DF2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,8 +61,17 @@
 		6756293A1CD98FEC009DF2CC /* FMDBLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBLearnUITests.m; sourceTree = "<group>"; };
 		6756293C1CD98FEC009DF2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		675629481CD99118009DF2CC /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
-		675629491CD99118009DF2CC /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
-		E48FB60BABAE8847FDCBE7A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		675629491CD99118009DF2CC /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DataBaseManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		675F17E51CDAE10200A3EB3D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Student.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		675F17E61CDAE10200A3EB3D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		675F17E81CDAF10500A3EB3D /* StudentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDetailViewController.h; sourceTree = "<group>"; };
+		675F17E91CDAF10500A3EB3D /* StudentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDetailViewController.m; sourceTree = "<group>"; };
+		675F17EB1CDAF60C00A3EB3D /* AddStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudentViewController.h; sourceTree = "<group>"; };
+		675F17EC1CDAF60C00A3EB3D /* AddStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentViewController.m; sourceTree = "<group>"; };
+		675F17EE1CDB379800A3EB3D /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		675F17EF1CDB379800A3EB3D /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		675F17F11CDB4CD000A3EB3D /* CLassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLassListViewController.h; sourceTree = "<group>"; };
+		675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLassListViewController.m; sourceTree = "<group>"; };
 		F70A5123816D46C1A5B7070A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC8E5FA044CA73DBE8FE671 /* libPods.a in Frameworks */,
+				0E73BE2C0B2F1E121006DFA0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +128,16 @@
 			children = (
 				675629181CD98FEC009DF2CC /* AppDelegate.h */,
 				675629191CD98FEC009DF2CC /* AppDelegate.m */,
-				6756291B1CD98FEC009DF2CC /* ViewController.h */,
-				6756291C1CD98FEC009DF2CC /* ViewController.m */,
+				6756291B1CD98FEC009DF2CC /* StudentListViewController.h */,
+				6756291C1CD98FEC009DF2CC /* StudentListViewController.m */,
+				675F17E81CDAF10500A3EB3D /* StudentDetailViewController.h */,
+				675F17E91CDAF10500A3EB3D /* StudentDetailViewController.m */,
+				675F17EB1CDAF60C00A3EB3D /* AddStudentViewController.h */,
+				675F17EC1CDAF60C00A3EB3D /* AddStudentViewController.m */,
+				675F17F11CDB4CD000A3EB3D /* CLassListViewController.h */,
+				675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */,
+				675F17EE1CDB379800A3EB3D /* IndexViewController.h */,
+				675F17EF1CDB379800A3EB3D /* IndexViewController.m */,
 				6756291E1CD98FEC009DF2CC /* Main.storyboard */,
 				675629211CD98FEC009DF2CC /* Assets.xcassets */,
 				675629231CD98FEC009DF2CC /* LaunchScreen.storyboard */,
@@ -122,6 +145,8 @@
 				675629151CD98FEB009DF2CC /* Supporting Files */,
 				675629481CD99118009DF2CC /* DataBaseManager.h */,
 				675629491CD99118009DF2CC /* DataBaseManager.m */,
+				675F17E51CDAE10200A3EB3D /* Student.h */,
+				675F17E61CDAE10200A3EB3D /* Student.m */,
 			);
 			path = FMDBLearn;
 			sourceTree = "<group>";
@@ -164,7 +189,7 @@
 		FC67CD87D718DE45C9C0EBB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E48FB60BABAE8847FDCBE7A1 /* libPods.a */,
+				21CACDC372DA5F7C5A4BE375 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,10 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6756291D1CD98FEC009DF2CC /* ViewController.m in Sources */,
+				6756291D1CD98FEC009DF2CC /* StudentListViewController.m in Sources */,
 				6756291A1CD98FEC009DF2CC /* AppDelegate.m in Sources */,
+				675F17E71CDAE10200A3EB3D /* Student.m in Sources */,
 				6756294A1CD99118009DF2CC /* DataBaseManager.m in Sources */,
 				675629171CD98FEC009DF2CC /* main.m in Sources */,
+				675F17F31CDB4CD000A3EB3D /* CLassListViewController.m in Sources */,
+				675F17ED1CDAF60C00A3EB3D /* AddStudentViewController.m in Sources */,
+				675F17EA1CDAF10500A3EB3D /* StudentDetailViewController.m in Sources */,
+				675F17F01CDB379800A3EB3D /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

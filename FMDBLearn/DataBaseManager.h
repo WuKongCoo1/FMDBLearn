@@ -21,5 +21,12 @@
 - (void)insertStudent;
 
 - (NSArray *)queryAllStudent;
+
+
+- (NSDictionary *)searchStudentWithID:(NSNumber *)studentID;
+
+- (BOOL)insertStudentWithStudentName:(NSString *)name;
+
+- (BOOL)deleteStudentWithID:(NSString *)studentID;
 @end
 

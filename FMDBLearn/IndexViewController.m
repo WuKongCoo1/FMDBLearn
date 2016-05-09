@@ -31,7 +31,7 @@
     }];
     
     [[_classButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [self performSegueWithIdentifier:@"gotoStudentListVC" sender:nil];
+        [self performSegueWithIdentifier:@"gotoClassList" sender:nil];
     }];
     
 }

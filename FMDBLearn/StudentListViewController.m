@@ -30,15 +30,16 @@ UITableViewDataSource
     
     [[DataBaseManager sharedInstance] createTable];
     
-//    [[DataBaseManager sharedInstance] insertStudent];
     [[DataBaseManager sharedInstance] queryAllStudent];
     
     [self setupData];
     
+    NSLog(@"%@", self.navigationController.interactivePopGestureRecognizer);
     
     [self setupUI];
     
 }
+
 
 - (void)setupData
 {

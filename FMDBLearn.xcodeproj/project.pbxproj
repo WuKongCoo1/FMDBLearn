@@ -22,6 +22,7 @@
 		675F17ED1CDAF60C00A3EB3D /* AddStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17EC1CDAF60C00A3EB3D /* AddStudentViewController.m */; };
 		675F17F01CDB379800A3EB3D /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17EF1CDB379800A3EB3D /* IndexViewController.m */; };
 		675F17F31CDB4CD000A3EB3D /* CLassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */; };
+		677EFE631CDC2E9B00BAAF7C /* AddClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFE621CDC2E9B00BAAF7C /* AddClassViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		675F17EF1CDB379800A3EB3D /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		675F17F11CDB4CD000A3EB3D /* CLassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLassListViewController.h; sourceTree = "<group>"; };
 		675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLassListViewController.m; sourceTree = "<group>"; };
+		677EFE611CDC2E9B00BAAF7C /* AddClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClassViewController.h; sourceTree = "<group>"; };
+		677EFE621CDC2E9B00BAAF7C /* AddClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClassViewController.m; sourceTree = "<group>"; };
 		F70A5123816D46C1A5B7070A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +141,8 @@
 				675F17F21CDB4CD000A3EB3D /* CLassListViewController.m */,
 				675F17EE1CDB379800A3EB3D /* IndexViewController.h */,
 				675F17EF1CDB379800A3EB3D /* IndexViewController.m */,
+				677EFE611CDC2E9B00BAAF7C /* AddClassViewController.h */,
+				677EFE621CDC2E9B00BAAF7C /* AddClassViewController.m */,
 				6756291E1CD98FEC009DF2CC /* Main.storyboard */,
 				675629211CD98FEC009DF2CC /* Assets.xcassets */,
 				675629231CD98FEC009DF2CC /* LaunchScreen.storyboard */,
@@ -376,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6756291D1CD98FEC009DF2CC /* StudentListViewController.m in Sources */,
+				677EFE631CDC2E9B00BAAF7C /* AddClassViewController.m in Sources */,
 				6756291A1CD98FEC009DF2CC /* AppDelegate.m in Sources */,
 				675F17E71CDAE10200A3EB3D /* Student.m in Sources */,
 				6756294A1CD99118009DF2CC /* DataBaseManager.m in Sources */,

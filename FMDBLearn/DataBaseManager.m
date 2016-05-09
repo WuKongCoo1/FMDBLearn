@@ -13,6 +13,7 @@
 
 static DataBaseManager *manager = nil;
 static FMDatabase *dataBase = nil;
+
 @implementation DataBaseManager
 
 + (instancetype)sharedInstance
@@ -20,6 +21,7 @@ static FMDatabase *dataBase = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [[DataBaseManager alloc] init];
+        [manager openDataBase];
     });
     
     return manager;
@@ -137,4 +139,39 @@ static FMDatabase *dataBase = nil;
     }
     return isSuccess;
 }
+
+#pragma mark - 班级操作
+- (NSArray *)queryClasses
+{
+    FMResultSet *rs = [dataBase executeQuery:@"select * from t_class"];
+    
+    NSMutableArray *resultArr = [NSMutableArray array];
+    
+    while ([rs next]) {
+        [resultArr addObject:[rs resultDictionary]];
+    }
+    
+    return resultArr;
+}
+
+- (BOOL)insertClassWithClassName:(NSString *)name
+{
+    BOOL isSuccess = [dataBase executeUpdate:@"insert into t_class (name) values (?)", name];
+    
+    if (isSuccess) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"classDidChange" object:nil];
+    }
+    
+    return isSuccess;
+}
+
+- (BOOL)deleteClassWithID:(NSString *)classID
+{
+    BOOL isSuccess = [dataBase executeUpdate:@"delete from t_class where id = ?", classID];
+    if (isSuccess) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"classDidChange" object:nil];
+    }
+    return isSuccess;
+}
+
 @end

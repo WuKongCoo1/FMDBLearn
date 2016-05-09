@@ -28,5 +28,12 @@
 - (BOOL)insertStudentWithStudentName:(NSString *)name;
 
 - (BOOL)deleteStudentWithID:(NSString *)studentID;
+
+
+- (NSArray *)queryClasses;
+
+- (BOOL)insertClassWithClassName:(NSString *)name;
+
+- (BOOL)deleteClassWithID:(NSString *)classID;
 @end
 
